@@ -1,15 +1,10 @@
 ---
-title: "Paper Title Number 1"
+title: "Race Detection and Reachability in Nearly Series-Parallel DAGs"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+date: 2018
+venue: 'ACM-SIAM SODA'
+paperurl: 'https://epubs.siam.org/doi/abs/10.1137/1.9781611975031.11'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Agrawal, K., Devietti, J., Fineman, J. T., Lee, I. T. A., Utterback, R., & Xu, C. (2018). Race detection and reachability in nearly series-parallel DAGs. In Proceedings of the Twenty-Ninth Annual ACM-SIAM Symposium on Discrete Algorithms (pp. 156-171). Society for Industrial and Applied Mathematics.

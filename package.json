@@ -5,8 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && cp -r build/* .",
-		"build:only": "vite build",
+		"build": "vite build",
 		"deploy": "npm run build && git add . && git commit -m 'Deploy updated site' && git push origin master",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",

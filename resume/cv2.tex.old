@@ -1,0 +1,223 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[bottom=0.5in]{geometry}
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{date}{HTML}{666666} 
+\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{headings}{HTML}{6A6A6A}
+\definecolor{subheadings}{HTML}{333333}
+
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+
+\setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}[SmallCapsFont = Lato-Reg.ttf,BoldFont = Lato-Bol.ttf,ItalicFont = Lato-RegIta.ttf]
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+\newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
+
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+\usepackage[document]{ragged2e}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\newcommand{\namesection}[3]{
+	\centering{
+		\sffamily
+		\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{40pt}{10cm}\selectfont #1 
+		\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #2
+	} \\
+	\vspace{5pt}
+	\centering{
+	    
+	    \fontspec[Path = fonts/raleway/]{Raleway-Regular}
+	    \fontsize{11pt}{14pt}\selectfont #3
+	}
+	\vspace{5pt}
+}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\namesection{Calvin}{Xu}{ 
+\href{mailto:cx23@illinois.edu}{\custombold{cx23@illinois.edu}}\\
+\href{https://github.com/cmxu}{\custombold{github://cmxu}} | \href{https://cmxu.io}{\custombold{cmxu.io}} | \href{https://stackoverflow.com/users/5037048/cmxu}{\custombold{stack://cmxu}}
+}
+
+\section{Research Statement}
+\justify{I am focused on making trustworthy ML techniques \textit{usable} in \textit{real world} applications at scale. My research lies at the intersection between \textit{ML} and \textit{formal methods}. I am particularly interested in building efficient algorithms that maintain formal guarantees on performance and reliability.}
+
+% I study the landscape adversarial examples, towards verifiable robustness while maintaining high accuracy. I am also interested in the generation of practical adversarial examples, robust training, neural network verification, and the intersection of explainable/interpretable with robust ML.
+
+\section{Education}
+\begin{tabular}{r|p{11cm}}
+ \textsc{Current} & \textsc{PhD Candidate} at \textsc{University of Illinois at Urbana-Champaign}\\
+ \textsc{Sep 2021} & \small{Working on \textbf{PhD} in \textbf{CS}, GPA: 4.0/4.0}\\\multicolumn{2}{c}{} \\
+ \textsc{Dec 2019} & \textsc{Advanced Studies Student} at \textsc{Massachusetts Institute of Technology} \\
+ \textsc{Aug 2019} & \small{Coursework - Advances in Computer Vision (6.869), GPA: 5.0/5.0}\\\multicolumn{2}{c}{} \\
+ \textsc{Dec 2018} & \textsc{Undergraduate/Graduate Student} at \textsc{Washington University in St. Louis} \\
+ \textsc{Aug 2015} & \small{\textbf{MS} in \textbf{CS}, Certificate in Data Mining \& Machine Learning, GPA: 3.9/4.0}\\
+ & \small{\textbf{BS} in \textbf{Mathematics} and \textbf{BS} in \textbf{CS}, GPA: 3.8/4.0}\\
+\end{tabular}
+
+
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+ \textsc{May 2021} & \textsc{Associate Staff} at \textsc{MIT Lincoln Laboratory} \\
+ \textsc{Mar 2019} & \small{\vspace{-10pt}\begin{itemize}
+ \item Applied DAGAN to network traffic to augment unbalanced classes resulting in a \textasciitilde 20\% increase in classification accuracy
+ \item Applied CNNs, Word2Vec, and Q-Learning techniques to flight data to predict flight reroutes, published at \textit{INFORMS '19}
+ \item Gathered dataset and built system using NLP and Neural Networks (NNs) to determine when to apply Adversarial ML
+ \item Explored Spatial Transformer Networks for data augmentation
+ \item Developed an algorithm using GANs and Non-Negative NNs that won 1st place at \href{https://sites.google.com/view/advml/advml19-challenge}{AdvML Challenge} at \textit{SigKDD 2019}\end{itemize}\vspace{-15pt}}\\\multicolumn{2}{c}{} \\
+ \textsc{Dec 2018} & \textsc{Teaching Assistant} at \textsc{Washington University in St. Louis}\\
+ \textsc{Sep 2016} & \small{\vspace{-10pt}\begin{itemize}
+ \item Graded and held office hours for graduate level Machine Learning (150 students) and Numerical Applied Mathematics (50 students)
+ \item Designed, ran, and graded the final project for the Machine Learning course\end{itemize}\vspace{-15pt}}\\\multicolumn{2}{c}{} \\
+ \textsc{Aug 2018} & \textsc{Intern} at \textsc{EUB-INC} in Beijing, China\\
+ \textsc{May 2018} & \small{\vspace{-10pt}\begin{itemize}
+ \item Leveraged NNs and clustering to automate user grouping for data-driven advertisement on WeChat. 
+ \item Developed algorithm which reduced turnaround time by 90\% for data team, allowing for faster, more targeted advertisement\end{itemize}\vspace{-15pt}}\\
+\end{tabular}
+
+\section{Research Experience}
+\begin{tabular}{r|p{11cm}}
+ \textsc{Current} & \textsc{PhD Student} at \textsc{University of Illinois in Urbana-Champaign}\\
+ \textsc{Aug 2021} & \small{Currently working on 
+ \begin{itemize}
+     \item  Certified training and efficient DNN verification of universal adversarial perturbations
+     \item Stronger adversarial attacks against LLMs
+     \item Training for better LLM alignment
+     \item Training networks that are certifiably robust under network compression (pruning/quantization)
+     \item Probabilistic verification of VAEs in the wireless domain
+     \item Certifiably robust training of DNNs
+ \end{itemize}\vspace{-15pt}}\\\multicolumn{2}{c}{} \\\end{tabular}
+ % \small{Developed technique for generating Robust UAPs which have strong potential for creating real-world attacks, submitted to \textit{ICML '23}. Created and implemented technique for unsupervised UAP generation. Working on attacks and verification techniques for wireless systems, accepted at \textit{NSDI '23}. Currently focused on studying the landscape of adversarial examples and robustness against UAPs.}\\\multicolumn{2}{c}{} \\
+ 
+\begin{tabular}{r|p{11cm}}
+ \textsc{Mar 2018} & \textsc{Research Assistant} at \textsc{Carnegie Mellon University}\\
+ \textsc{Jun 2017} & \small{\vspace{-10pt}\begin{itemize}
+     \item Employed Adversarial ML techniques to thwart defect prediction
+     \item Developed theory for attacking and defending high dimensional SVMs
+     \item Implemented data poisoning attacks on the \href{https://www.sec.cs.tu-bs.de/~danarp/drebin/}{Drebin Android Malware} dataset, and presented poster at CMU
+     \item Proved that \textasciitilde 10 poisoned data points can be enough to significantly reduce the effectiveness of the malware detector
+ \end{itemize}\vspace{-15pt}}\\\multicolumn{2}{c}{} \\
+ \textsc{May 2017} & \textsc{Research Assistant} at \textsc{Washington University in St. Louis}\\
+ \textsc{Jun 2016} & \small{\vspace{-10pt}\begin{itemize}
+ \item Created benchmarks and proved correctness for a work-stealing scheduler, improving cache efficiency by factor of 2
+ \item Rigorously proved a nearly series parallel race detection algorithm which matched asymptotic runtime of series parallel case
+ \item Published paper in \textit{ACM-SIAM SODA '18}\end{itemize}\vspace{-15pt}}\\
+\end{tabular}
+
+
+
+\section{Publications}
+\textbf{Certified DNN Training against Universal Adversarial Perturbations}\\
+\underline{Changming Xu}, Gagandeep Singh. ECCV '24$^\dagger$\\[-8pt]
+
+\textbf{Robust Universal Adversarial Perturbations}\\
+\underline{Changming Xu}, Gagandeep Singh. ICML '24$^\dagger$\\[-8pt]
+
+\textbf{Input-Relational Verification of Deep Neural Networks}\\
+Debangshu Banerjee, \underline{Changming Xu}, Gagandeep Singh. PLDI '24$^\dagger$\\[-8pt]
+
+\textbf{Bypassing the Safety Training of Open-Source LLMs with Priming Attacks}\\
+Jason Vega*, Isha Chaudhary*, \underline{Changming Xu}*, Gagandeep Singh. ICLR Tiny Paper '24 (invite to present)\\[-8pt]
+
+\textbf{Exploring Practical Vulnerabilities of Machine Learning-based Wireless Systems}\\
+Zikun Liu, \underline{Changming Xu}, Emerson Sie, Deepak Vasisht, Gagandeep Singh. NSDI '23\\[-8pt]
+
+\textbf{Race Detection and Reachability in Nearly Series-Parallel DAGs}\\
+Kunal Agrawal, Joseph Devietti, Jeremy T. Fineman, I-Ting Angelina Lee, Robert Utterback, \underline{Changming Xu}. SODA '18\\
+\hspace*{6pt}{\footnotesize $^*$equal contribution, $^\dagger$in submission}
+
+\section{Fellowships \& Awards}
+\begin{tabular}{r|p{11cm}}
+\textsc{Aug} 2022 & \href{https://www.qualcomm.com/research/university-relations/innovation-fellowship/2022-north-america}{Qualcomm Innovation Fellowship Winner} (one of 19 teams out of $\sim$300)\\
+& \textit{Proposal}: Provably Robust Machine Learning for Wireless Systems \\
+\textsc{Aug} 2019 & 1st place at \href{https://sites.google.com/view/advml/advml19-challenge}{AdvML Challenge} at \textit{SigKDD 2019} \\
+\textsc{Apr} 2018 & \href{https://eece.wustl.edu/academics/graduate-programs/Graduate-Fellowships-Scholarships.html}{Dean's Select Fellowship for Research Excellence (WUSTL)} \\
+\textsc{Dec} 2015-17 & Putnam Exam: 28, 20, 12 \\
+\textsc{Aug} 2015 & Compton Scholar for Mathematics and Physics (4 per grade) \\
+\textsc{Apr} 2017 & Missouri Math Competition: 1st Place Team \\
+\textsc{Dec} 2015 & ICPC Regional: Top 5 Team
+\end{tabular}
+
+
+% \begin{tabular}{l|l}
+% Robust Universal Adversarial Perturbations* & ICML '24\\
+% Exploring Practical Vulnerabilities of Machine Learning-based Wireless Systems & NSDI '23\\
+% \href{https://dl.acm.org/doi/10.5555/3174304.3175277}{Race Detection and Reachability in Nearly Series-Parallel DAGs} & SODA '18\\
+% \end{tabular}\\
+
+%Section: Languages
+\section{Skills}
+\begin{tabular}{r|p{11cm}}
+\textsc{Languages} & English (Native), Chinese (Fluent), Japanese (Basic Knowledge)\\
+\textsc{ML Libraries} & Torch, Tensorflow, Keras, Theano, Weka, Scikit-Learn, Spark\\
+\textsc{Coding} & Python, Java, Matlab, R, Javascript, C, C++, Android, Mathematica\\
+\end{tabular}
+
+\iffalse
+\section{Interests and Activities}
+Math Club (President)\\
+Bridge Club (Founder)\\
+Chess Club\\
+Badminton\\
+\fi
+
+%\section{Coursework}
+%\begin{tabular}{r|p{11cm}}
+% \textsc{Math} & Differential Equations, Matrix Algebra, Calculus of Several Variables, Introduction to Analysis, Number Theory and Cryptography, Numerical Applied Mathematics, Introduction to Lebesgue Integration, Topics in Applied Mathematics: Mathematics for Multimedia, Linear Algebra, Probability, Bayesian Statistics, Mathematical Statistics, Time Series Analysis, Statistical Computation \\\multicolumn{2}{c}{} \\
+%\textsc{CS} & Programming Skills Workshop, Algorithms and Data Structures, \textit{Machine Learning}, Object Oriented Software Development Laboratory, Introduction to System Software, \textit{Introduction to Artificial Intelligence}, \textit{Computational Geometry}, \textit{Data Mining}, \textit{Multi-Agent Systems}, \textit{Topological Applications for Data Analysis and Machine Learning}, \textit{Approximation Algorithms}, \textit{Algorithms for Nonlinear Optimization}, \textit{Sparse Modeling for Imaging and Vision}, \textit{Systems Security}, \textit{Algorithms for Computational Biology}, \textit{Advanced Topics in Computer Vision}$^\dagger$, \textit{Statistical Reinforcement Learning}', \textit{Logic and AI}', \textit{Adv Topics in Sec, Priv and ML}'\\
+%\end{tabular}\\
+%\hspace*{37pt}\footnotesize{\textit{Graduate Level}, $^\dagger$ MIT, ' UIUC}
+
+\end{document}

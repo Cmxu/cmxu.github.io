@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Calvin Xu - Computer Science PhD Student at UIUC</title>
-	<meta name="description" content="Calvin Xu is a 4th year PhD Student in Computer Science at UIUC, focused on trustworthy machine learning and formal methods." />
+	<meta name="description" content="Calvin Xu is a 5th year PhD Student in Computer Science at UIUC, focused on trustworthy machine learning and formal methods." />
 </svelte:head>
 
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -76,23 +76,19 @@
 		<div class="md:col-span-2">
 			<div class="prose prose-academic">
 				<p>
-					I am a 4th year PhD Student in the Department of Computer Science at the University of Illinois 
+					I am a 5th year PhD Student in the Department of Computer Science at the University of Illinois 
 					Urbana-Champaign (UIUC). I am focused on making <strong>trustworthy machine learning</strong> 
 					techniques <strong>usable</strong> in the <strong>real world</strong>. My research lies at 
 					the intersection between <strong>ML</strong> and <strong>formal methods</strong>. I am broadly 
 					interested in the generation of practical adversarial examples, certified training, and neural 
 					network verification for the vision, NLP, and wireless application areas. Recently, I have been 
-					working on LLM reasoning/efficiency and the using LLMs to improve classification.
+					working on providing formal guarantees for agentic systems.
 				</p>
 				
 				<p>
-					I am currently working on a PhD in Computer Science at UIUC advised by 
-					<a href="https://ggndpsngh.github.io" target="_blank" rel="noopener">Prof. Gagandeep Singh</a>. 
-					In the Fall semester of 2024, I was an intern at TikTok in 
-					<a href="https://www.linkedin.com/in/xinghai-h-80316360/" target="_blank" rel="noopener">Xinghai Hu's</a> 
-					Responsible Recommendation Systems team working with 
-					<a href="https://www.linkedin.com/in/jiachensun23/" target="_blank" rel="noopener">Jiachen Sun</a> 
-					working on VLM's for content Safety. I am currently an intern at Meta.
+					I am currently working on a PhD in Computer Science at UIUC advised by
+					<a href="https://ggndpsngh.github.io" target="_blank" rel="noopener">Prof. Gagandeep Singh</a>.
+					I was an intern at TikTok in Fall 2024 and at Meta in Summer 2025.
 				</p>
 				
 				<p>
@@ -111,25 +107,7 @@
 					<a href="mailto:cx23@illinois.edu">email</a> anytime.
 				</p> -->
 
-				<h2>Side Projects</h2>
-				<ul class="space-y-2">
-					<li>
-						<a href="https://geo.cmxu.io" target="_blank" rel="noopener" 
-						   class="text-academic-accent dark:text-purple-400 hover:underline">
-							<strong>WhereAmI</strong>
-						</a> - Create location guessing games with your own pictures or choose from a list of curated images
-					</li>
-					<li>
-						<a href="https://24pp.cmxu.io" target="_blank" rel="noopener" 
-						   class="text-academic-accent dark:text-purple-400 hover:underline">
-							<strong>24++</strong>
-						</a> - An upgraded version of 24 where the goal is to create 3-digit numbers with (+,-,/,*) operations and 7 cards
-					</li>
-					<li>
-						<strong>[In Development]</strong> - An agentic AI powered latex editor
-					</li>
-				</ul>
-			</div>
+				</div>
 		</div>
 	</div>
 </div>

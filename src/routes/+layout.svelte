@@ -9,6 +9,7 @@
 		{ href: '/', label: 'About' },
 		{ href: '/publications', label: 'Publications' },
 		{ href: '/cv', label: 'CV' },
+		{ href: '/other', label: 'Other' },
 	];
 	
 	let mobileMenuOpen = false;

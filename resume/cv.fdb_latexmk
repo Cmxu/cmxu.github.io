@@ -1,0 +1,25 @@
+# Fdb version 4
+["pdflatex"] 1776106008.6774 "/home/cmxu/projects/cmxu.github.io/resume/cv.tex" "cv.pdf" "cv" 1776106008.77418 2
+  "/etc/texmf/web2c/texmf.cnf" 1773384382.18547 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/cmxu/projects/cmxu.github.io/resume/cv.tex" 1776106008.06906 14476 c03a5a2da6c6fee595b2cb2952970048 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1705352648 20144 147463a6a579f4597269ef9565205cfe ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1705352648 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty" 1642282977 1656 7e824878bad4df5a3e8bba4e463d9126 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1654720880 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1704491087 30006 57b07afb710ee2f649c65cfbafda39c1 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1705955748 6565 cfd9fd0a1d5f5ad985151778771ff7a9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1696969620 9327 c30c00c0072edba199ede5889311aaa9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/marvosym/marvosym.sty" 1333989323 9393 ceaf2ea8eb2c81fdb168323fc5fffc89 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774247731 6927636 457eaeba8691bb415ce4c47340b7ebdb ""
+  "cv.aux" 1776106008.6771 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "cv.tex" 1776106008.06906 14476 c03a5a2da6c6fee595b2cb2952970048 ""
+  (generated)
+  "cv.aux"
+  "cv.log"
+  "cv.pdf"
+  (rewritten before read)

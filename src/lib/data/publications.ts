@@ -14,12 +14,12 @@ export const publications: Publication[] = [
 	{
 		id: 'severa-2026',
 		title: 'SEVerA: Verified Synthesis of Self-Evolving Agents',
-		authors: 'Debangshu Banerjee, Changming Xu, Gagandeep Singh',
+		authors: 'Debangshu Banerjee*, Changming Xu*, Gagandeep Singh',
 		venue: 'In Submission',
 		date: '2026-03-26',
 		year: 2026,
 		paperUrl: 'https://arxiv.org/pdf/2603.25111',
-		tags: ['LLM agents', 'verified synthesis', 'self-evolving agents', 'formal methods']
+		tags: ['LLM agents', 'self-evolving agents', 'formal methods']
 	},
 	{
 		id: 'agent-c-2025',
@@ -29,7 +29,7 @@ export const publications: Publication[] = [
 		date: '2025-12-25',
 		year: 2025,
 		paperUrl: 'https://arxiv.org/pdf/2512.23738',
-		tags: ['LLM agents', 'temporal constraints', 'formal methods', 'constrained generation']
+		tags: ['LLM agents', 'formal methods', 'constrained generation']
 	},
 	{
 		id: 'iclr-2025',

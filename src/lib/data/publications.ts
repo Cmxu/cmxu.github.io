@@ -12,6 +12,26 @@ export interface Publication {
 
 export const publications: Publication[] = [
 	{
+		id: 'severa-2026',
+		title: 'SEVerA: Verified Synthesis of Self-Evolving Agents',
+		authors: 'Debangshu Banerjee, Changming Xu, Gagandeep Singh',
+		venue: 'In Submission',
+		date: '2026-03-26',
+		year: 2026,
+		paperUrl: 'https://arxiv.org/pdf/2603.25111',
+		tags: ['LLM agents', 'verified synthesis', 'self-evolving agents', 'formal methods']
+	},
+	{
+		id: 'agent-c-2025',
+		title: 'Enforcing Temporal Constraints for LLM Agents',
+		authors: 'Adharsh Kamath, Sishen Zhang, Changming Xu, Shubham Ugare, Gagandeep Singh, Sasa Misailovic',
+		venue: 'In Submission',
+		date: '2025-12-25',
+		year: 2025,
+		paperUrl: 'https://arxiv.org/pdf/2512.23738',
+		tags: ['LLM agents', 'temporal constraints', 'formal methods', 'constrained generation']
+	},
+	{
 		id: 'iclr-2025',
 		title: 'Support is All You Need for Certified VAE Training',
 		authors: 'Changming Xu, Debangshu Banerjee, Deepak Vasisht, Gagandeep Singh',
